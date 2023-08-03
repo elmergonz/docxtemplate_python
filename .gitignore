@@ -1,0 +1,9 @@
+# env folder
+env/
+.env/
+
+# out folder 
+out/
+
+# Python cache files
+__pycache__/
