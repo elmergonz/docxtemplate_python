@@ -1,0 +1,51 @@
+[
+  {
+    "doc_id": "DOC1",
+    "data": {
+      "var": "Hola distinguido",
+      "items": [
+        { "name": "Gustavo", "lastname": "Sanchez" },
+        { "name": "Elena", "lastname": "Perez" },
+        { "name": "Carlos", "lastname": "Amancio" }
+      ]
+    }
+  },
+  {
+    "doc_id": "DOC2",
+    "data": {
+      "ciudadOficina": "Santo Domingo",
+      "fecha": {
+        "diaVerbal": "Veinticuatro",
+        "diaNum": "4",
+        "mesVerbal": "Agosto",
+        "anoVerbal": "Dos Mil Veintitres"
+      },
+      "rep1": {
+        "nombre": "Kelvin Pimentel",
+        "cargo": "Analista",
+        "documento": "1234567890"
+      },
+      "rep2": {
+        "nombre": "Johnny Rondon",
+        "cargo": "Director TI",
+        "documento": "0987654321"
+      },
+      "firmantesPF": [
+        {
+          "nombre": "Elmer Gonzalez",
+          "documento": "2143658709",
+          "nacionalidad": "Dominicano",
+          "estadoCivil": "Soltero",
+          "domicilio": "C/ Rosario #123"
+        },
+        {
+          "nombre": "Yely Gonzalez",
+          "documento": "0987654321",
+          "nacionalidad": "Canadiense",
+          "estadoCivil": "Casada",
+          "domicilio": "C/ Castillo #321"
+        }
+      ]
+    }
+  }
+]
