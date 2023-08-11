@@ -1,9 +1,20 @@
+# build
+build/
+dist/
+
 # env folder
 env/
 .env/
 
 # out folder 
-out/
+out/*
 
 # Python cache files
 __pycache__/
+
+# Executables
+*.exe
+
+# Compressed
+*.zip
+*.rar
