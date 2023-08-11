@@ -6,17 +6,21 @@ import os
 if (not os.path.exists('out')):
     os.mkdir('out')
 
+docs_id = {
+    'DOC1': 'sample.docx',
+    'DOC2': 'ContratoUnico.docx',
+}
+
 app = FastAPI()
 
-@app.get('/compose')
-def compose():
+@app.post('/compose')
+def compose(doc_id: str, data: dict[str, object]):
 
-    doc = DocxTemplate("sample.docx")
-    context = { 'var': 'Hola distinguido' }
+    doc = DocxTemplate(docs_id[doc_id])
 
-    doc.render(context)
+    doc.render(data)
 
-    fileName = f'output-{uuid4()}'
+    fileName = f'{doc_id}-{uuid4()}'
     filePath = f'{os.getcwd()}\\out\\{fileName}.docx'
 
     doc.save(filePath)
