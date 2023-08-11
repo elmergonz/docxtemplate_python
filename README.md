@@ -43,6 +43,8 @@ $ uvicorn main:app --port 8000 --workers 4
 ```
 En el flag `--workers` indicamos la cantidad de hilos que deseamos usar. Si deseas hacer un [test](##Load-test) usando mas hilos, puedes colocar la cantidad maxima que posea tu computador.
 
+El swagger se encuentra en la ruta `http://localhost:8000/docs`
+
 ## Load test
 
 Para ejecutar el load test debes correr el siguiente comando:
