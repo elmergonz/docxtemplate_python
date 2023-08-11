@@ -8,7 +8,7 @@ if (not os.path.exists('out')):
 
 docs_id = {
     'DOC1': 'sample.docx',
-    'DOC2': 'ContratoUnico.docx',
+    'DOC2': 'Contrato.docx',
 }
 
 app = FastAPI()
