@@ -43,7 +43,9 @@ uvicorn main:app --port 8000 --workers 4
 ```
 En el flag `--workers` indicamos la cantidad de hilos que deseamos usar. Si deseas hacer un [test](#load-test) usando mas hilos, puedes colocar la cantidad maxima que posea tu computador.
 
-El swagger se encuentra en la ruta `http://localhost:8000/docs`
+El swagger se encuentra en la ruta `http://localhost:8000/docs`. En la ruta `/compose` se debe colocar el `doc_id` y la data en el body. Ambos se encuentran en el archivo `demo.json`.
+
+Una vez que se ejecuta el metodo, el documento de word generado se va a colocar en la carpeta `/out` del proyecto.
 
 ## Load test
 
