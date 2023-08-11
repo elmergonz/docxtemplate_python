@@ -17,8 +17,8 @@ Debes tener python y pip descargado y en el path. Pueden instalarlo desde estos 
 
 ```sh
 # Comprobar la instalacion
-$ python -v
-$ pip -v
+python -v
+pip -v
 ```
 
 ### Instalacion de k6 (para el load test)
@@ -27,7 +27,7 @@ Debes tener instalado [k6](https://k6.io/docs/get-started/installation/#windows)
 
 ```sh
 # Comprobar la instalacion
-$ k6 help
+k6 help
 ```
 
 ## Run
@@ -36,10 +36,10 @@ Una vez instalado, se deben ejecutar los siguientes comandos en la carpeta raiz 
 
 ```sh
 # Instalar los paquetes necesarios
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Lanzar la aplicacion en el localhost 
-$ uvicorn main:app --port 8000 --workers 4
+uvicorn main:app --port 8000 --workers 4
 ```
 En el flag `--workers` indicamos la cantidad de hilos que deseamos usar. Si deseas hacer un [test](##Load-test) usando mas hilos, puedes colocar la cantidad maxima que posea tu computador.
 
@@ -50,7 +50,7 @@ El swagger se encuentra en la ruta `http://localhost:8000/docs`
 Para ejecutar el load test debes correr el siguiente comando:
 
 ```sh
-$ k6 run ./test.js
+k6 run ./test.js
 ```
 
 En el archivo `demo.json` se encuentra la data que sera usada para generar cada archivo. Solo se tiene que modificar las constantes doc_id y data del archivo `test.js`
