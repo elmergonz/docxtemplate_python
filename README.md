@@ -23,7 +23,7 @@ pip -v
 
 ### Instalacion de k6 (para el load test)
 
-Debes tener instalado [k6](https://k6.io/docs/get-started/installation/#windows) en tu pc.
+Debes tener instalado [k6](https://k6.io/docs/get-started/installation/) en tu pc.
 
 ```sh
 # Comprobar la instalacion
